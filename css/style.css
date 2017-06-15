@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+/*Hamburger menu from bootstrap*/
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F15A29;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.border{
+border:solid rgba(255,255,255, 0.3);
+border-width: 20px;
+-moz-box-shadow:0 0 5px #888;
+-webkit-box-shadow:0 0 5px #888;
+box-shadow: 0 0 5px #888;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  }
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+.overlay {overflow-y: auto;}
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
+}
+/*end of hamburger menu from bootstrap*/
+/*html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.col-sm-12 {
+  text-align: center;
+}
+
+.icon {
+  width: 65px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: white;
+  margin: 6px 0;
+  margin-bottom: 13px;
+}
+
+.hamburger-icon {
+  margin-top: 90px;
+  margin-left: 90px;
+  cursor: pointer;
+}
+
+
+/* Full screen menu */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: white;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.hamburger-icon {
+  margin-top: 90px;
+  margin-left: 90px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal li {
+  float: left;
+}
+
+.mybtn {
+  color;
+  white;
+  background-color: orange;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.breakfastbg:hover {
+  color: white;
+  background-color: #f2f2f2;
+  opacity: 0.5;
+}*/
+
+.dinnerbg:hover {
+  color: white;
+  background-color: #f2f2f2;
+  opacity: 0.5;
+}
+
+.lunchbg:hover {
+  color: white;
+  background-color: #f2f2f2;
+  opacity: 0.5;
+}
+
+.topHead {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background: url('../img/landing.jpg') no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+.par {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-family: 'Roboto Slab';
+  font-weight: lighter;
+  padding: 50px;
+}
+
+.happy {
+  font-size: 20px;
+  font-family: 'Roboto Slab';
+  text-align: center;
+}
+
+.party {
+  font-size: 20px;
+  font-family: 'Roboto Slab';
+  text-align: center;
+  color: white;
+}
+
+.breakfast {
+  font-size: 20px;
+  font-family: 'Roboto Slab';
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+.dinner {
+  font-size: 20px;
+  font-family: 'Roboto Slab';
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+.lunch {
+  font-size: 20px;
+  font-family: 'Roboto Slab';
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+.breakfastbg {
+  background-image: url('breakfast.jpg');
+  padding: 19px;
+  margin: 0px;
+}
+
+.dinnerbg {
+  background-image: url('dinner.jpg');
+  padding: 19px;
+  margin: 0px;
+}
+
+.lunchbg {
+  background-image: url('lunch.jpg');
+  padding: 19px;
+  margin: 0px;
+}
+
+.happybg {
+  background-color: #eff0f2;
+  padding: 13px;
+}
+
+.partybg:hover {
+  background-color: orange;
+  color: black;
+}
+
+.partybg {
+  padding: 15px;
+  background-color: #ff4300;
+}
+
+.food {
+  padding-top: 80px;
+  margin: 0px;
+  height: 500px;
+  width: 500px;
+  left: 5%;
+}
+
+.foodp {
+  float: right;
+  padding: 50px;
+  right: 7%;
+}
+
+.desc-1 {
+  font-family: 'Roboto Slab';
+  font-size: 34px;
+  text-align: left;
+  color: #595959;
+}
+
+.desc1 {
+  font-family: 'Roboto Slab';
+  font-size: 24px;
+  text-align: left;
+  padding: 5px;
+}
+
+.ipsum1 {
+  font-family: 'Roboto Slab';
+  font-size: 17px;
+  text-align: left;
+  color: #595959;
+}
+
+.desc-2 {
+  font-family: 'Roboto Slab';
+  font-size: 34px;
+  text-align: right;
+  color: #595959;
+}
+
+.desc2 {
+  font-family: 'Roboto Slab';
+  font-size: 24px;
+  text-align: right;
+  padding: 5px;
+}
+
+.ipsum2 {
+  font-family: 'Roboto Slab';
+  font-size: 17px;
+  text-align: right;
+  color: #595959;
+}
+
+p {
+  text-align: center;
+}
+
+.gallery1 {
+  color: white;
+  margin: 0px;
+  padding-top: 50px;
+  float: left;
+}
+
+.gallery2 {
+  color: white;
+  margin: 0px;
+  padding-top: 50px;
+  float: ;
+}
+
+.view {
+  font-size: 17px;
+  color: #ff6600;
+  border: 1px solid #ff6600;
+  padding: 10px;
+  font-family: 'Roboto Slab';
+}
+
+.view:hover {
+  background-color: #F15A29;
+  color: white;
+  cursor: pointer;
+}
+
+.arr {
+  font-size: 30px;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.arr:hover {
+  color: white;
+}
+
+.drinks {
+  float: left;
+  padding: 50px;
+  right: 5%;
+  padding-top: 0px
+}
+
+.drink {
+  padding-top: 0px;
+  margin: 0px;
+  height: 300px;
+  width: 400px;
+}
+
+a:hover {
+  background-color: #ff6600;
+}
+
+.menu {
+  background-color: grey;
+  padding: 100px;
+}
+
+
+/*START OF THE FOOD MENU */
+
+.third {
+  text-align: center;
+  display: block;
+  padding: 20px;
+  font-family: 'Roboto Slab';
+}
+
+.nav {
+  text-align: center;
+  background-color: #d9d9d9;
+  font-size: 15px;
+  font-family: 'Roboto Slab';
+  padding: 20px;
+  font-weight: bold;
+  color: #595959;
+}
+
+.nav:hover {
+  background-color: white;
+  color: #F15A29;
+  border: 0px solid white;
+}
+
+.third {
+  background-color: white;
+  padding: 20px;
+}
+
+.foodMenu {
+  padding: 15px;
+  height: 200px;
+  width: 300px;
+}
+
+a {
+  background-color: grey;
+  color: black;
+  font-family: 'Roboto Slab';
+  font-size: 10px;
+}
+
+.one {
+  padding: 10px;
+}
+
+.top {
+  background-image: url('foodsBg.jpg');
+  padding: 60px;
+}
+
+.pizza {
+  padding-left: 11px;
+}
+
+.foodName {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Roboto Slab';
+  color: #F15A29;
+  font-weight: light;
+}
+
+
+/*START OF HAPPY CUSTOMERS*/
+
+.customerMenu .thumbnail {
+  margin: 50px;
+  font-family: 'Roboto Slab';
+  box-shadow: 2px 3px 10px 6px #ebebe0;
+}
+
+.customers {
+  text-align: center;
+  border-right: 2px solid #f2f2f2;
+  padding: 20px;
+}
+
+.end {
+  background-color: #ff6600;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto Slab';
+  text-align: center;
+}
+
+.thumbnail h6 {
+  font-weight: bold;
+  color: #595959;
+  font-size: 15px;
+}
+
+.thumbnail p {
+  color: #595959;
+  font-weight: lighter;
+}
+
+.col-sm-5 p {
+  font-size: 14px;
+}
+
+.col-sm-5 {
+  text-align: center;
+  padding: 20px;
+}
+
+.arrowCustomers {
+  font-size: 20px;
+  color: #F15A29;
+  font-weight: lighter;
+}
+
+.customerMenu {
+  background-color: white;
+  padding: 10px;
+}
+
+.customersP {
+  padding: 10px;
+}
+
+
+/*START OF SIGN UP DIV*/
+
+.contact {
+  height: 300px;
+  background-image: url('../img/subscribe.jpg');
+  background-size: 100%100%;
+  color: white;
+  text-align: center;
+  padding: 36px;
+  padding-top: 80px;
+  font-family: 'Roboto Slab';
+}
+
+.user-email {
+  color: black;
+}
+
+input[type=email] {
+  width: 400px;
+  height: 50px;
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 22px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+.delivery {
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.button-subscribe {
+  background-color: #F15A29;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  width: 250px;
+  cursor: pointer;
+}
+
+
+/*FINAL DIV*/
+
+.end {
+  background-color: #ff6600;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto Slab';
+  text-align: center;
+  padding: 5px;
+}
