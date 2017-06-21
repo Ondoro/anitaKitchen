@@ -178,13 +178,19 @@ html, body {
   background-color: #eff0f2;
   padding: 13px;
 }
-.lunchim {
+.lunch {
   font-size: 20px;
   font-family: 'Roboto Slab';
   color: white;
   font-style: italic;
   text-align: center;
   padding: 20px;
+
+}
+.lunchim {
+  background-image: url('lunch.jpg');
+  padding: 19px;
+  margin: 0px;
 }
 
 .dinner {
@@ -209,11 +215,7 @@ html, body {
   margin: 0px;
 }
 
-.lunchbg {
-  background-image: url('lunch.jpg');
-  padding: 19px;
-  margin: 0px;
-}
+
 
 .happybg {
   background-color: #eff0f2;
